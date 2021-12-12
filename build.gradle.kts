@@ -33,9 +33,9 @@ tasks.withType<Jar> {
 //    from(configurations.compileClasspath.get().map { if (it.isDirectory()) it else zipTree(it) })
 
     // To add all of the dependencies
-    from(sourceSets.main.get().output)
+//    from(sourceSets.main.get().output)
 
-    dependsOn(configurations.compileClasspath)
+//    dependsOn(configurations.compileClasspath)
     from(configurations.compileClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
 
 }
