@@ -21,6 +21,12 @@ kapt {
     useBuildCache = false
 }
 
+tasks.withType<Jar> {
+    manifest {
+        attributes["Main-Class"] = "tvz.lukec.autoservis.AutoserviceApplication"
+    }
+}
+
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
