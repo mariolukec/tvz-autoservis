@@ -28,7 +28,7 @@ tasks.withType<Jar> {
 
     }
 
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    duplicatesStrategy = DuplicatesStrategy.WARN
 
 //    from(configurations.compileClasspath.get().map { if (it.isDirectory()) it else zipTree(it) })
 
@@ -47,7 +47,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.springframework.boot:spring-boot-starter-security")
-    implementation("org.springframework.security:spring-security-config")
+//    implementation("org.springframework.security:spring-security-config")
     implementation("org.liquibase:liquibase-core")
     implementation("org.postgresql:postgresql")
     implementation("org.postgresql:postgresql")
