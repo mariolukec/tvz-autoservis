@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <!-- columns -->
+    <include file="/META-INF/master-postgres.xml"/>
+
+    <!-- data -->
+    <include file="/META-INF/changelogs/data/data-00-oauth_client_details.xml"/>
+    <include file="/META-INF/changelogs/data/data-01-role.xml"/>
+    <include file="/META-INF/changelogs/data/data-08-images.xml"/>
+    <include file="/META-INF/changelogs/data/data-02-users.xml"/>
+    <include file="/META-INF/changelogs/data/data-03-makes.xml"/>
+    <include file="/META-INF/changelogs/data/data-04-models.xml"/>
+    <include file="/META-INF/changelogs/data/data-05-cars.xml"/>
+    <include file="/META-INF/changelogs/data/data-06-services.xml"/>
+    <include file="/META-INF/changelogs/data/data-07-service_mechanics.xml"/>
+
+
+</databaseChangeLog>

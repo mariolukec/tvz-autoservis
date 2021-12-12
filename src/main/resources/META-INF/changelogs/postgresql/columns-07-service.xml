@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+    <changeSet id="00001-20200223" author="tbahcic" dbms="postgresql">
+        <createTable tableName="SERVICE">
+            <column name="ID" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" primaryKeyName="PK_SERVICE" />
+            </column>
+            <column name="SERVICE_STATUS_ID" type="BIGINT">
+                <constraints nullable="false" />
+            </column>
+            <column name="CAR_ID" type="BIGINT">
+                <constraints nullable="false" />
+            </column>
+            <column name="NAME" type="VARCHAR(30)">
+                <constraints nullable="false" />
+            </column>
+            <column name="PRICE" type="decimal">
+                <constraints nullable="true" />
+            </column>
+            <column name="DESCRIPTION" type="VARCHAR(500)">
+                <constraints nullable="true" />
+            </column>
+            <column name="MILEAGE" type="BIGINT">
+                <constraints nullable="false" />
+            </column>
+            <column name="DATE_RECEIVED" type="TIMESTAMP">
+                <constraints nullable="false" />
+            </column>
+            <column name="DATE_FINISHED" type="TIMESTAMP">
+                <constraints nullable="true" />
+            </column>
+
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="SERVICE"
+                                 baseColumnNames="SERVICE_STATUS_ID"
+                                 constraintName="FK_SERVICE_SERVICE_STATUS"
+                                 referencedColumnNames="ID"
+                                 referencedTableName="SERVICE_STATUS"/>
+
+        <addForeignKeyConstraint baseTableName="SERVICE"
+                                 baseColumnNames="CAR_ID"
+                                 constraintName="FK_SERVICE_CAR"
+                                 referencedColumnNames="ID"
+                                 referencedTableName="CAR"/>
+    </changeSet>
+
+    <changeSet id="00002-20200326" author="mlukec">
+        <addColumn tableName="SERVICE">
+            <column name="PICKED_UP_AT" type="TIMESTAMP" />
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>

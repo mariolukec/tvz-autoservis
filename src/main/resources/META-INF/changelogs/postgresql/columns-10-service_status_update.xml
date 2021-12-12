@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+    <changeSet id="00002-20200228" author="mrados" dbms="postgresql">
+        <dropTable tableName="SERVICE_STATUS" cascadeConstraints="true" />
+        <addColumn catalogName="cat"
+                    schemaName="public"
+                    tableName="service">
+            <column name="service_status" type="varchar(100)" />
+        </addColumn>
+        <dropColumn tableName="service" columnName="service_status_id" />
+    </changeSet>
+</databaseChangeLog>

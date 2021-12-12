@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+    <changeSet id="0001-20200311" author="tbahcic">
+
+<!--        <insert dbms="postgresql" tableName="image">-->
+<!--            <column name="data" valueBlobFile="../../../photos/kia-ceed.jpg"/>-->
+<!--        </insert>-->
+<!--        <insert dbms="postgresql" tableName="image">-->
+<!--            <column name="data" valueBlobFile="../../../photos/bmw-320d.png"/>-->
+<!--        </insert>-->
+
+<!--        <insert dbms="postgresql" tableName="image">-->
+<!--            <column name="data" valueBlobFile="../../../photos/face1.png"/>-->
+<!--        </insert>-->
+<!--        <insert dbms="postgresql" tableName="image">-->
+<!--            <column name="data" valueBlobFile="../../../photos/face2.png"/>-->
+<!--        </insert>-->
+<!--        <insert dbms="postgresql" tableName="image">-->
+<!--            <column name="data" valueBlobFile="../../../photos/face3.png"/>-->
+<!--        </insert>-->
+
+    </changeSet>
+
+</databaseChangeLog>

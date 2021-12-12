@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+    <changeSet id="0001-20200311" author="tbahcic">
+
+        <!-- KIA SERVISI - MEHANICARI -->
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="1"/>
+            <column name="mechanic_id" value="3"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="2"/>
+            <column name="mechanic_id" value="1"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="2"/>
+            <column name="mechanic_id" value="2"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="3"/>
+            <column name="mechanic_id" value="1"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="4"/>
+            <column name="mechanic_id" value="3"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="5"/>
+            <column name="mechanic_id" value="1"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="6"/>
+            <column name="mechanic_id" value="2"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="7"/>
+            <column name="mechanic_id" value="2"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="8"/>
+            <column name="mechanic_id" value="3"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="9"/>
+            <column name="mechanic_id" value="1"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="10"/>
+            <column name="mechanic_id" value="1"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="10"/>
+            <column name="mechanic_id" value="2"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="10"/>
+            <column name="mechanic_id" value="3"/>
+        </insert>
+
+
+        <!-- AUDI SERVISI - MEHANICARI -->
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="11"/>
+            <column name="mechanic_id" value="3"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="12"/>
+            <column name="mechanic_id" value="1"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="12"/>
+            <column name="mechanic_id" value="2"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="13"/>
+            <column name="mechanic_id" value="1"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="14"/>
+            <column name="mechanic_id" value="3"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="15"/>
+            <column name="mechanic_id" value="1"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="16"/>
+            <column name="mechanic_id" value="2"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="17"/>
+            <column name="mechanic_id" value="2"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="18"/>
+            <column name="mechanic_id" value="3"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="19"/>
+            <column name="mechanic_id" value="1"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="20"/>
+            <column name="mechanic_id" value="1"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="20"/>
+            <column name="mechanic_id" value="2"/>
+        </insert>
+        <insert dbms="postgresql" tableName="service_mechanic">
+            <column name="service_id" value="20"/>
+            <column name="mechanic_id" value="3"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

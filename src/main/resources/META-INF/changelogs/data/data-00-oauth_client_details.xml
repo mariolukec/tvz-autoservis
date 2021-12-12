@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+    <changeSet id="0001-20200115" author="mlukec">
+
+        <insert dbms="postgresql" tableName="oauth_client_details">
+            <column name="client_id" value="security#1"/>
+            <column name="client_secret" value="secret#1"/>
+            <column name="scope" value="read,write"/>
+            <column name="authorized_grant_types" value="password,authorization_code,refresh_token"/>
+            <column name="web_server_redirect_uri" />
+            <column name="authorities" />
+            <!-- access token validity: 5 minutes -->
+            <column name="access_token_validity" value="100000"/>
+            <!-- refresh token validity: 3 days -->
+            <column name="refresh_token_validity" value="259200"/>
+            <column name="additional_information" />
+            <column name="resource_ids" value="context-path" />
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

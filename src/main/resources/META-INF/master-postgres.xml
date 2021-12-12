@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <preConditions onFail="WARN">
+        <dbms type="postgresql"/>
+    </preConditions>
+
+    <include file="/META-INF/changelogs/postgresql/columns-00-oauth_client_details.xml"/>
+    <include file="/META-INF/changelogs/postgresql/columns-01-role.xml"/>
+    <include file="/META-INF/changelogs/postgresql/columns-03-image.xml"/>
+    <include file="/META-INF/changelogs/postgresql/columns-02-users.xml"/>
+    <include file="/META-INF/changelogs/postgresql/columns-04-car.xml"/>
+    <include file="/META-INF/changelogs/postgresql/columns-05-user_car.xml"/>
+    <include file="/META-INF/changelogs/postgresql/columns-06-service_status.xml"/>
+    <include file="/META-INF/changelogs/postgresql/columns-07-service.xml"/>
+    <include file="/META-INF/changelogs/postgresql/columns-08-service_mechanic.xml"/>
+    <include file="/META-INF/changelogs/postgresql/columns-09-service_image.xml"/>
+    <include file="/META-INF/changelogs/postgresql/columns-10-service_status_update.xml"/>
+    <include file="/META-INF/changelogs/postgresql/columns-11-cars_models.xml"/>
+    <include file="/META-INF/changelogs/postgresql/columns-12-cars_makes.xml"/>
+
+
+</databaseChangeLog>

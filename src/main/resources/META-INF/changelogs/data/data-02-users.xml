@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+    <changeSet id="0001-20200115" author="mlukec">
+
+        <insert dbms="postgresql" tableName="users">
+            <column name="first_name" value="Mislav"/>
+            <column name="last_name" value="Marić"/>
+            <column name="email" value="mechanic1@fake.com"/>
+            <column name="password" value="$2a$10$nSKbGDZJpQvGghAkDfdmze9STpHs.ZanP0hnXB7a94HIs5YxcTjRy"/>
+            <column name="role_id" value="1"/>
+        </insert>
+        <insert dbms="postgresql" tableName="users">
+            <column name="first_name" value="Josip"/>
+            <column name="last_name" value="Perić"/>
+            <column name="email" value="mechanic2@fake.com"/>
+            <column name="password" value="$2a$10$nSKbGDZJpQvGghAkDfdmze9STpHs.ZanP0hnXB7a94HIs5YxcTjRy"/>
+            <column name="role_id" value="1"/>
+        </insert>
+        <insert dbms="postgresql" tableName="users">
+            <column name="first_name" value="Damir"/>
+            <column name="last_name" value="Perković"/>
+            <column name="email" value="mechanic3@fake.com"/>
+            <column name="password" value="$2a$10$nSKbGDZJpQvGghAkDfdmze9STpHs.ZanP0hnXB7a94HIs5YxcTjRy"/>
+            <column name="role_id" value="1"/>
+        </insert>
+        <insert dbms="postgresql" tableName="users">
+            <column name="first_name" value="Ivan"/>
+            <column name="last_name" value="Horvat"/>
+            <column name="email" value="client1@fake.com"/>
+            <column name="password" value="$2a$10$nSKbGDZJpQvGghAkDfdmze9STpHs.ZanP0hnXB7a94HIs5YxcTjRy"/>
+            <column name="role_id" value="2"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+    <changeSet id="0001-20200311" author="tbahcic">
+
+        <insert dbms="postgresql" tableName="car">
+            <column name="user_id" value="4"/>
+            <column name="make" value="Kia"/>
+            <column name="model" value="Ceed"/>
+            <column name="year" value="2017"/>
+            <column name="registration_plate" value="ZG-7490-ED"/>
+        </insert>
+        <insert dbms="postgresql" tableName="car">
+            <column name="user_id" value="4"/>
+            <column name="make" value="Bmw"/>
+            <column name="model" value="320d"/>
+            <column name="year" value="2016"/>
+            <column name="registration_plate" value="ZG-1350-GP"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

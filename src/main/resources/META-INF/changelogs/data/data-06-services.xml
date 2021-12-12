@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+    <changeSet id="0001-20200311" author="tbahcic">
+
+        <!-- KIA 2018 -->
+        <!-- KIA 02/2018 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="1"/>
+            <column name="name" value="Zamjena ulja"/>
+            <column name="price" value="249"/>
+            <column name="description" value="Izmjenjeno ulje, sve ostalo je u redu."/>
+            <column name="mileage" value="177000"/>
+            <column name="date_received" value="2018-02-13T12:00:00.000000"/>
+            <column name="date_finished" value="2018-02-15T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+        <!-- KIA 05/2018 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="1"/>
+            <column name="name" value="Zamjena diskova"/>
+            <column name="price" value="590"/>
+            <column name="description" value="Zamjenjeni diskovi."/>
+            <column name="mileage" value="181000"/>
+            <column name="date_received" value="2018-05-13T12:00:00.000000"/>
+            <column name="date_finished" value="2018-05-17T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+        <!-- KIA 08/2018 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="1"/>
+            <column name="name" value="Zamjena filtera zraka"/>
+            <column name="price" value="279"/>
+            <column name="description" value="Izmjenjen filter zraka."/>
+            <column name="mileage" value="189000"/>
+            <column name="date_received" value="2018-08-11T12:00:00.000000"/>
+            <column name="date_finished" value="2018-08-14T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+        <!-- KIA 11/2018 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="1"/>
+            <column name="name" value="Mali servis"/>
+            <column name="price" value="870"/>
+            <column name="description" value="Mali servis..."/>
+            <column name="mileage" value="194000"/>
+            <column name="date_received" value="2018-11-04T12:00:00.000000"/>
+            <column name="date_finished" value="2018-11-09T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+
+        <!-- KIA 2019 -->
+        <!-- KIA 01/2019 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="1"/>
+            <column name="name" value="Zamjena ulja"/>
+            <column name="price" value="239"/>
+            <column name="description" value="Izmjenjeno ulje, sve ostalo je u redu."/>
+            <column name="mileage" value="197000"/>
+            <column name="date_received" value="2019-01-01T12:00:00.000000"/>
+            <column name="date_finished" value="2019-01-04T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+        <!-- KIA 04/2019 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="1"/>
+            <column name="name" value="Punjenje klime"/>
+            <column name="price" value="159"/>
+            <column name="description" value="Nestalo je klimofluida."/>
+            <column name="mileage" value="204000"/>
+            <column name="date_received" value="2019-04-24T12:00:00.000000"/>
+            <column name="date_finished" value="2019-04-27T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+        <!-- KIA 09/2019 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="1"/>
+            <column name="name" value="Zamjena akumulatora"/>
+            <column name="price" value="339"/>
+            <column name="description" value="Zamjena baterije."/>
+            <column name="mileage" value="207000"/>
+            <column name="date_received" value="2019-09-02T12:00:00.000000"/>
+            <column name="date_finished" value="2019-09-09T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+        <!-- KIA 12/2019 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="1"/>
+            <column name="name" value="Zamjena ulja"/>
+            <column name="price" value="309"/>
+            <column name="description" value="Izmjenjeno ulje, sve ostalo je u redu."/>
+            <column name="mileage" value="213000"/>
+            <column name="date_received" value="2019-12-09T12:00:00.000000"/>
+            <column name="date_finished" value="2019-12-11T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+
+        <!-- KIA 2020 -->
+        <!-- KIA 1/2020 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="1"/>
+            <column name="name" value="Zamjena filtera goriva"/>
+            <column name="price" value="229"/>
+            <column name="description" value="Zamjenjen je filter za gorivo."/>
+            <column name="mileage" value="217000"/>
+            <column name="date_received" value="2019-01-15T12:00:00.000000"/>
+            <column name="date_finished" value="2019-01-20T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+        <!-- KIA now()/2020 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="1"/>
+            <column name="name" value="Veliki servis"/>
+            <column name="price" value="3900"/>
+            <column name="description" value="Sve smo promijenili."/>
+            <column name="mileage" value="220000"/>
+            <column name="date_received" value="now()"/>
+            <column name="service_status" value="IN_PROGRESS"/>
+        </insert>
+
+
+        <!-- AUDI 2018 -->
+        <!-- AUDI 01/2018 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="2"/>
+            <column name="name" value="Zamjena ulja"/>
+            <column name="price" value="249"/>
+            <column name="description" value="Izmjenjeno ulje, sve ostalo je u redu."/>
+            <column name="mileage" value="3000"/>
+            <column name="date_received" value="2018-01-13T12:00:00.000000"/>
+            <column name="date_finished" value="2018-01-15T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+        <!-- AUDI 04/2018 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="2"/>
+            <column name="name" value="Punjenje klime"/>
+            <column name="price" value="169"/>
+            <column name="description" value="Nestalo je klimofluida."/>
+            <column name="mileage" value="7000"/>
+            <column name="date_received" value="2018-04-08T12:00:00.000000"/>
+            <column name="date_finished" value="2018-04-11T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+        <!-- AUDI 09/2018 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="2"/>
+            <column name="name" value="Zamjena akumulatora"/>
+            <column name="price" value="378"/>
+            <column name="description" value="Zamjena baterije."/>
+            <column name="mileage" value="11000"/>
+            <column name="date_received" value="2018-09-01T12:00:00.000000"/>
+            <column name="date_finished" value="2018-09-05T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+        <!-- AUDI 12/2018 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="2"/>
+            <column name="name" value="Zamjena ulja"/>
+            <column name="price" value="360"/>
+            <column name="description" value="Izmjenjeno ulje, sve ostalo je u redu."/>
+            <column name="mileage" value="14000"/>
+            <column name="date_received" value="2018-12-27T12:00:00.000000"/>
+            <column name="date_finished" value="2018-12-29T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+
+        <!-- AUDI 2019 -->
+        <!-- AUDI 02/2019 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="2"/>
+            <column name="name" value="Zamjena ulja"/>
+            <column name="price" value="249"/>
+            <column name="description" value="Izmjenjeno ulje, sve ostalo je u redu."/>
+            <column name="mileage" value="17000"/>
+            <column name="date_received" value="2019-02-19T12:00:00.000000"/>
+            <column name="date_finished" value="2019-02-20T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+        <!-- AUDI 05/2019 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="2"/>
+            <column name="name" value="Zamjena diskova"/>
+            <column name="price" value="565"/>
+            <column name="description" value="Zamjenjeni diskovi."/>
+            <column name="mileage" value="21000"/>
+            <column name="date_received" value="2019-05-20T12:00:00.000000"/>
+            <column name="date_finished" value="2019-05-22T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+        <!-- AUDI 08/2019 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="2"/>
+            <column name="name" value="Zamjena filtera zraka"/>
+            <column name="price" value="279"/>
+            <column name="description" value="Izmjenjen filter zraka."/>
+            <column name="mileage" value="23000"/>
+            <column name="date_received" value="2019-08-11T12:00:00.000000"/>
+            <column name="date_finished" value="2019-08-12T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+        <!-- AUDI 11/2019 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="2"/>
+            <column name="name" value="Mali servis"/>
+            <column name="price" value="950"/>
+            <column name="description" value="Mali servis..."/>
+            <column name="mileage" value="27000"/>
+            <column name="date_received" value="2019-11-03T12:00:00.000000"/>
+            <column name="date_finished" value="2019-11-07T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+
+        <!-- AUDI 2020 -->
+        <!-- AUDI 2/2020 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="2"/>
+            <column name="name" value="Zamjena filtera goriva"/>
+            <column name="price" value="329"/>
+            <column name="description" value="Zamjenjen je filter za gorivo."/>
+            <column name="mileage" value="29000"/>
+            <column name="date_received" value="2019-02-25T12:00:00.000000"/>
+            <column name="date_finished" value="2019-02-27T12:00:00.000000"/>
+            <column name="service_status" value="DONE"/>
+        </insert>
+        <!-- AUDI now()/2020 -->
+        <insert dbms="postgresql" tableName="service">
+            <column name="car_id" value="2"/>
+            <column name="name" value="Veliki servis"/>
+            <column name="price" value="4600"/>
+            <column name="description" value="Sve smo promijenili."/>
+            <column name="mileage" value="33000"/>
+            <column name="date_received" value="now()"/>
+            <column name="service_status" value="IN_PROGRESS"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

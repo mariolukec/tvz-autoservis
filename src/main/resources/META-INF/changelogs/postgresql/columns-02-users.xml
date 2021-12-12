@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="00001-20200115" author="mlukec" dbms="postgresql">
+
+        <createTable tableName="USERS">
+
+            <column name="ID" type="BIGINT" autoIncrement="true">
+                <constraints nullable="false" unique="true" primaryKey="true" primaryKeyName="PK_USER" />
+            </column>
+            <column name="FIRST_NAME" type="VARCHAR(50)">
+                <constraints nullable="false" unique="true" />
+            </column>
+            <column name="LAST_NAME" type="VARCHAR(50)">
+                <constraints nullable="false" unique="true" />
+            </column>
+            <column name="EMAIL" type="VARCHAR(50)">
+                <constraints nullable="false" unique="true" />
+            </column>
+            <column name="PASSWORD" type="varchar(100)">
+                <constraints nullable="false" unique="false" />
+            </column>
+            <column name="ROLE_ID" type="BIGINT">
+                <constraints nullable="false" unique="false" />
+            </column>
+            <column name="IMAGE_ID" type="BIGINT">
+                <constraints nullable="true" />
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="USERS"
+                                 baseColumnNames="ROLE_ID"
+                                 constraintName="FK_USER_ROLE"
+                                 referencedColumnNames="ID"
+                                 referencedTableName="ROLE"/>
+
+        <addForeignKeyConstraint baseTableName="USERS"
+                                 baseColumnNames="IMAGE_ID"
+                                 constraintName="FK_USER_IMAGE"
+                                 referencedColumnNames="ID"
+                                 referencedTableName="IMAGE"/>
+    </changeSet>
+
+</databaseChangeLog>
