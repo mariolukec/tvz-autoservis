@@ -28,7 +28,7 @@ tasks.withType<Jar> {
 
     }
 
-    duplicatesStrategy = DuplicatesStrategy.WARN
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
 
 //    from(configurations.compileClasspath.get().map { if (it.isDirectory()) it else zipTree(it) })
 
