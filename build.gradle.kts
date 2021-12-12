@@ -25,6 +25,9 @@ tasks.withType<Jar> {
     manifest {
         attributes["Main-Class"] = "tvz.lukec.autoservice.AutoserviceApplicationKt"
     }
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
     // To add all of the dependencies
     from(sourceSets.main.get().output)
 
