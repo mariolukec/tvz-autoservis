@@ -31,15 +31,13 @@ tasks.withType<Jar> {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 
 //    from(configurations.compileClasspath.get().map { if (it.isDirectory()) it else zipTree(it) })
-    from(configurations.runtimeClasspath.get().map { if (it.isDirectory()) it else zipTree(it) })
 
     // To add all of the dependencies
-//    from(sourceSets.main.get().output)
-//
-//    dependsOn(configurations.runtimeClasspath)
-//    from({
-//        configurations.runtimeClasspath.get().filter { it.name.endsWith("jar") }.map { zipTree(it) }
-//    })
+    from(sourceSets.main.get().output)
+
+    dependsOn(configurations.runtimeClasspath)
+    from(configurations.runtimeClasspath.get().map { if (it.isDirectory()) it else zipTree(it) })
+
 }
 
 dependencies {
