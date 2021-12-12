@@ -26,7 +26,7 @@ tasks.withType<Jar> {
         attributes["Main-Class"] = "tvz.lukec.autoservice.AutoserviceApplicationKt"
     }
 
-    duplicatesStrategy = DuplicatesStrategy.INHERIT
+    duplicatesStrategy = DuplicatesStrategy.WARN
 
     // To add all of the dependencies
     from(sourceSets.main.get().output)
