@@ -23,7 +23,7 @@ kapt {
 
 tasks.withType<Jar> {
     manifest {
-        attributes["Main-Class"] = "tvz.lukec.autoservice.AutoserviceApplication"
+        attributes["Main-Class"] = "tvz.lukec.autoservice.AutoserviceApplicationKt"
     }
 }
 
