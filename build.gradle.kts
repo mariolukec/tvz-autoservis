@@ -24,9 +24,13 @@ kapt {
 tasks.withType<Jar> {
     manifest {
         attributes["Main-Class"] = "tvz.lukec.autoservice.AutoserviceApplicationKt"
+//        attributes["Class-Path"] = configurations.compileClasspath.collect { it.getName() }.join(' ')
+
     }
 
-    duplicatesStrategy = DuplicatesStrategy.WARN
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    from(configurations.compileClasspath.get().map { if (it.isDirectory()) it else zipTree(it) })
 
     // To add all of the dependencies
 //    from(sourceSets.main.get().output)
