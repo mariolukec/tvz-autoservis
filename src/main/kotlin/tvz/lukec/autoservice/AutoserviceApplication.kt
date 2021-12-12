@@ -7,8 +7,7 @@ import tvz.lukec.autoservice.rest.config.security.OAuth2ResourceServerConfig
 
 @SpringBootApplication(
         exclude = [
-            OAuth2ResourceServerConfig::class,
-            AuthorizationServerConfigurerAdapter::class
+            OAuth2ResourceServerConfig::class
         ]
 )
 class AutoserviceApplication
